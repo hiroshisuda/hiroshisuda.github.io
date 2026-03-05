@@ -5,9 +5,10 @@ const resume: ResumeData = {
   title: 'Senior Software Engineer',
   summary:
     'Detail-oriented software engineer with 8+ years of experience in full-stack development, specializing in visualizations, cloud technologies, and automation. Proven expertise in optimizing development processes, implementing DevOps practices, and leading Agile teams as a Scrum Master. Adept at leveraging modern web technologies, backend frameworks, and cloud solutions to build scalable applications.',
+  location: 'Pittsburgh, PA',
   links: {
     github: 'https://github.com/hiroshisuda',
-    // linkedin: 'https://linkedin.com/in/yourprofile',
+    linkedin: 'https://www.linkedin.com/in/hiroshi-suda-662a23101/',
   },
   experience: [
     {

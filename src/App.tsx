@@ -15,6 +15,7 @@ export default function App() {
         <Hero
           name={resume.name}
           title={resume.title}
+          location={resume.location}
           summary={resume.summary}
         />
 

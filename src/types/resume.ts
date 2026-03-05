@@ -26,6 +26,7 @@ export interface Links {
 export interface ResumeData {
   name: string;
   title: string;
+  location: string;
   summary: string;
   links: Links;
   experience: ExperienceEntry[];
