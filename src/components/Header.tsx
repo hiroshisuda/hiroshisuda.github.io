@@ -22,7 +22,7 @@ export default function Header({ name, links, theme, onToggleTheme }: Props) {
       <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between gap-6">
         <a
           href="#about"
-          className="text-slate-900 dark:text-slate-100 font-semibold text-lg tracking-tight hover:text-teal-500 dark:hover:text-teal-400 transition-colors shrink-0"
+          className="text-slate-900 dark:text-slate-100 font-semibold text-lg tracking-tight hover:text-amber-500 dark:hover:text-amber-400 transition-colors shrink-0"
         >
           {name}
         </a>
@@ -32,7 +32,7 @@ export default function Header({ name, links, theme, onToggleTheme }: Props) {
             <a
               key={href}
               href={href}
-              className="text-sm text-slate-500 dark:text-slate-400 hover:text-teal-500 dark:hover:text-teal-400 transition-colors font-medium"
+              className="text-sm text-slate-500 dark:text-slate-400 hover:text-amber-500 dark:hover:text-amber-400 transition-colors font-medium"
             >
               {label}
             </a>
@@ -45,7 +45,7 @@ export default function Header({ name, links, theme, onToggleTheme }: Props) {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
-            className="text-slate-500 dark:text-slate-400 hover:text-teal-500 dark:hover:text-teal-400 transition-colors"
+            className="text-slate-500 dark:text-slate-400 hover:text-amber-500 dark:hover:text-amber-400 transition-colors"
           >
             <Github size={20} />
           </a>
@@ -55,7 +55,7 @@ export default function Header({ name, links, theme, onToggleTheme }: Props) {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
-              className="text-slate-500 dark:text-slate-400 hover:text-teal-500 dark:hover:text-teal-400 transition-colors"
+              className="text-slate-500 dark:text-slate-400 hover:text-amber-500 dark:hover:text-amber-400 transition-colors"
             >
               <Linkedin size={20} />
             </a>
@@ -63,7 +63,7 @@ export default function Header({ name, links, theme, onToggleTheme }: Props) {
           <button
             onClick={onToggleTheme}
             aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
-            className="text-slate-500 dark:text-slate-400 hover:text-teal-500 dark:hover:text-teal-400 transition-colors cursor-pointer"
+            className="text-slate-500 dark:text-slate-400 hover:text-amber-500 dark:hover:text-amber-400 transition-colors cursor-pointer"
           >
             {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
           </button>

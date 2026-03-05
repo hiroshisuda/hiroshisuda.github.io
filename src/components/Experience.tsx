@@ -18,7 +18,7 @@ export default function Experience({ experience }: Props) {
             {experience.map((entry, i) => (
               <div key={i} className="md:pl-10 relative">
                 {/* Timeline dot */}
-                <div className="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-teal-500 hidden md:block ring-4 ring-white dark:ring-slate-950" />
+                <div className="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-amber-500 hidden md:block ring-4 ring-white dark:ring-slate-950" />
 
                 <div className="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-6 hover:border-slate-300 dark:hover:border-slate-700 transition-colors">
                   <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 mb-4">
@@ -26,7 +26,7 @@ export default function Experience({ experience }: Props) {
                       <h3 className="text-slate-900 dark:text-slate-100 font-semibold text-lg leading-tight">
                         {entry.title}
                       </h3>
-                      <p className="text-teal-600 dark:text-teal-400 font-medium text-sm mt-0.5">{entry.company}</p>
+                      <p className="text-amber-600 dark:text-amber-400 font-medium text-sm mt-0.5">{entry.company}</p>
                     </div>
                     <span className="text-slate-400 dark:text-slate-500 text-sm font-mono shrink-0">{entry.period}</span>
                   </div>
@@ -34,7 +34,7 @@ export default function Experience({ experience }: Props) {
                   <ul className="space-y-2">
                     {entry.bullets.map((bullet, j) => (
                       <li key={j} className="flex gap-3 text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
-                        <span className="text-teal-500 leading-relaxed shrink-0">▸</span>
+                        <span className="text-amber-500 leading-relaxed shrink-0">▸</span>
                         {bullet}
                       </li>
                     ))}
@@ -52,7 +52,7 @@ export default function Experience({ experience }: Props) {
 function SectionHeading({ children }: { children: React.ReactNode }) {
   return (
     <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 flex items-center gap-4">
-      <span className="text-teal-500 dark:text-teal-400 font-mono text-xl">02.</span>
+      <span className="text-amber-500 dark:text-amber-400 font-mono text-xl">02.</span>
       {children}
       <div className="flex-1 h-px bg-slate-200 dark:bg-slate-800 hidden sm:block" />
     </h2>

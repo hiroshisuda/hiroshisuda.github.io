@@ -24,7 +24,7 @@ export default function Skills({ skills, additionalSkills }: Props) {
                 {group.skills.map((skill) => (
                   <span
                     key={skill}
-                    className="bg-white dark:bg-slate-800 text-teal-700 dark:text-teal-300 text-xs font-mono px-3 py-1.5 rounded-md border border-slate-200 dark:border-slate-700"
+                    className="bg-white dark:bg-slate-800 text-amber-700 dark:text-amber-300 text-xs font-mono px-3 py-1.5 rounded-md border border-slate-200 dark:border-slate-700"
                   >
                     {skill}
                   </span>
@@ -41,7 +41,7 @@ export default function Skills({ skills, additionalSkills }: Props) {
           <ul className="grid sm:grid-cols-2 gap-2">
             {additionalSkills.map((skill) => (
               <li key={skill} className="flex items-center gap-2 text-slate-600 dark:text-slate-400 text-sm">
-                <span className="text-teal-500">▸</span>
+                <span className="text-amber-500">▸</span>
                 {skill}
               </li>
             ))}
@@ -55,7 +55,7 @@ export default function Skills({ skills, additionalSkills }: Props) {
 function SectionHeading({ children }: { children: React.ReactNode }) {
   return (
     <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 flex items-center gap-4">
-      <span className="text-teal-500 dark:text-teal-400 font-mono text-xl">03.</span>
+      <span className="text-amber-500 dark:text-amber-400 font-mono text-xl">03.</span>
       {children}
       <div className="flex-1 h-px bg-slate-200 dark:bg-slate-800 hidden sm:block" />
     </h2>
