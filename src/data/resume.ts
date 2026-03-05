@@ -4,7 +4,7 @@ const resume: ResumeData = {
   name: 'Hiroshi Suda',
   title: 'Senior Software Engineer',
   summary:
-    'Detail-oriented software engineer with 8+ years of experience in full-stack development, specializing in visualizations, cloud technologies, and automation. Proven expertise in optimizing development processes, implementing DevOps practices, and leading Agile teams as a Scrum Master. Adept at leveraging modern web technologies, backend frameworks, and cloud solutions to build scalable applications.',
+    "I'm a full-stack engineer with 8+ years of experience building everything from autonomous vehicle visualizations to cloud-native web apps. I care about clean architecture, fast feedback loops, and shipping things that actually work. I've also spent a lot of time on the process side — running Agile teams, refining backlogs, and helping engineering orgs move with less friction.",
   location: 'Pittsburgh, PA',
   links: {
     github: 'https://github.com/hiroshisuda',
@@ -16,11 +16,11 @@ const resume: ResumeData = {
       title: 'Senior Software Engineer',
       period: 'July 2024 – Present',
       bullets: [
-        'Develop low-latency applications for monitoring and assisting a fleet of autonomous vehicles.',
-        'Facilitated Agile processes as Scrum Master, overseeing standups and backlog refinement.',
-        'Collaborated with product management to track delivery progress and refine development plans.',
-        'Built applications using React, Python, GraphQL, and AWS technologies like AppSync and DynamoDB.',
-        'Implemented team performance metrics and dashboards via Datadog to measure productivity.',
+        'Building low-latency monitoring and assistance tools for a fleet of autonomous vehicles.',
+        'Running Agile ceremonies as Scrum Master — standups, backlog refinement, sprint planning — keeping the team focused and unblocked.',
+        'Working closely with product to track delivery progress and adjust plans as priorities shift.',
+        'Shipping features across the stack with React, Python, GraphQL, AppSync, and DynamoDB.',
+        'Built out team performance dashboards in Datadog to give us visibility into productivity and bottlenecks.',
       ],
     },
     {
@@ -28,10 +28,10 @@ const resume: ResumeData = {
       title: 'Full Stack Software Engineer',
       period: 'September 2021 – June 2024',
       bullets: [
-        'Designed and implemented visualizations for autonomous vehicles using Golang, XViz, and JavaScript.',
-        'Developed and deployed applications using AWS technologies, including Greengrass and ECS.',
-        'Served as Scrum Master, managing daily standups, backlog grooming, sprint planning, and demos.',
-        'Prioritized team tasks and coordinated with stakeholders to ensure smooth development cycles.',
+        'Built rich visualizations for autonomous vehicle data using Golang, XViz, and JavaScript.',
+        'Developed and deployed cloud applications on AWS, including Greengrass (edge) and ECS (containerized services).',
+        'Served as Scrum Master across the full sprint lifecycle — standups, grooming, planning, and demos.',
+        'Helped the team stay aligned with stakeholders by keeping priorities clear and blockers visible.',
       ],
     },
     {
@@ -39,8 +39,8 @@ const resume: ResumeData = {
       title: 'Software Developer',
       period: 'January 2021 – June 2021',
       bullets: [
-        'Created and maintained backend systems to facilitate workflows and synchronize client data across multiple APIs using Laravel, Doctrine/DBAL, and SQL.',
-        'Collaborated with clients and senior developers to solve technical challenges and optimize project workflows.',
+        'Built and maintained backend systems to synchronize client data across multiple third-party APIs, using Laravel, Doctrine/DBAL, and SQL.',
+        'Worked directly with clients and senior engineers to untangle technical problems and keep projects on track.',
       ],
     },
     {
@@ -48,11 +48,11 @@ const resume: ResumeData = {
       title: 'Full Stack Developer',
       period: 'May 2017 – December 2020',
       bullets: [
-        'Built and tested frontend and backend applications with Laravel PHP, React JS, MySQL, and PHPUnit.',
-        'Implemented automated testing to ensure software quality throughout the development cycle.',
-        'Developed and maintained REST APIs and managed cloud hosting environments on Azure.',
-        'Integrated secure login using OAuth 2.0 and PKCE to meet industry security standards.',
-        'Led development both remotely and on-site in a highly collaborative environment.',
+        'Built and maintained full-stack applications for online education using Laravel, React, MySQL, and PHPUnit.',
+        'Wrote automated test suites that caught regressions early and gave the team confidence to ship faster.',
+        'Designed and maintained REST APIs, with hosting managed on Azure.',
+        'Implemented OAuth 2.0 with PKCE for secure authentication across multiple applications.',
+        'Led a distributed team across remote and on-site work over three-plus years.',
       ],
     },
     {
@@ -60,9 +60,9 @@ const resume: ResumeData = {
       title: 'Web Development Intern',
       period: 'July 2016 – May 2017',
       bullets: [
-        'Spearheaded department-wide improvements in WordPress theme development, reducing redundant work.',
-        'Developed WordPress themes for online courses and university marketing sites.',
-        'Maintained legacy AngularJS applications.',
+        'Standardized WordPress theme development across the department, cutting a lot of duplicated effort.',
+        'Built themes for online courses and university marketing pages.',
+        'Kept legacy AngularJS applications running while new projects moved forward.',
       ],
     },
     {
@@ -70,9 +70,9 @@ const resume: ResumeData = {
       title: 'Assistant Webmaster',
       period: 'May 2014 – July 2016',
       bullets: [
-        'Designed and implemented internal applications to automate sales and marketing tasks, increasing productivity by up to 80%.',
-        'Led a full website redesign using Drupal 7 CMS with custom themes and modules.',
-        'Provided technical support for sales and business teams.',
+        'Built internal tools to automate sales and marketing tasks, cutting manual work by up to 80%.',
+        'Led a full site redesign on Drupal 7, including custom themes and modules.',
+        'Handled day-to-day technical support for sales and business staff.',
       ],
     },
   ],
@@ -104,10 +104,10 @@ const resume: ResumeData = {
     },
   ],
   additionalSkills: [
-    'Agile methodologies and team leadership',
+    'Agile / Scrum team leadership',
     'Performance monitoring and data visualization',
-    'Cloud-based logging and observability',
-    'DevOps best practices and workflow optimization',
+    'Cloud observability and logging',
+    'DevOps and developer workflow improvement',
   ],
 };
 
