@@ -21,14 +21,11 @@ export interface EducationEntry {
 export interface Links {
   github: string;
   linkedin?: string;
-  email: string;
 }
 
 export interface ResumeData {
   name: string;
   title: string;
-  location: string;
-  phone: string;
   summary: string;
   links: Links;
   experience: ExperienceEntry[];

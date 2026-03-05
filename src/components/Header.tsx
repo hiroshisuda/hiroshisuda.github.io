@@ -1,4 +1,4 @@
-import { Github, Mail, Linkedin } from 'lucide-react';
+import { Github, Linkedin } from 'lucide-react';
 import type { Links } from '../types/resume';
 
 interface Props {
@@ -58,13 +58,6 @@ export default function Header({ name, links }: Props) {
               <Linkedin size={20} />
             </a>
           )}
-          <a
-            href={`mailto:${links.email}`}
-            aria-label="Email"
-            className="text-slate-400 hover:text-teal-400 transition-colors"
-          >
-            <Mail size={20} />
-          </a>
         </div>
       </div>
     </header>

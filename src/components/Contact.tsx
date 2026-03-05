@@ -1,43 +1,28 @@
-import { Mail, Github, Linkedin, MapPin } from 'lucide-react';
+import { Github, Linkedin } from 'lucide-react';
 import type { Links } from '../types/resume';
 
 interface Props {
-  email: string;
-  location: string;
   links: Links;
 }
 
-export default function Contact({ email, location, links }: Props) {
+export default function Contact({ links }: Props) {
   return (
     <section id="contact" className="py-24">
       <div className="max-w-5xl mx-auto px-6">
         <SectionHeading>Contact</SectionHeading>
 
         <div className="mt-12 max-w-xl">
-          <p className="text-slate-400 text-lg leading-relaxed mb-8">
+          <p className="text-slate-400 text-lg leading-relaxed mb-10">
             I'm always open to new opportunities and conversations. Whether you have a project in
-            mind or just want to connect, feel free to reach out.
+            mind or just want to connect, feel free to reach out via GitHub or LinkedIn.
           </p>
-
-          <a
-            href={`mailto:${email}`}
-            className="inline-flex items-center gap-3 bg-teal-500 hover:bg-teal-400 text-slate-950 font-semibold px-8 py-4 rounded-lg transition-colors mb-10"
-          >
-            <Mail size={18} />
-            {email}
-          </a>
-
-          <div className="flex items-center gap-2 text-slate-500 text-sm mb-8">
-            <MapPin size={14} />
-            <span>{location}</span>
-          </div>
 
           <div className="flex gap-6">
             <a
               href={links.github}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-slate-400 hover:text-teal-400 transition-colors text-sm"
+              className="inline-flex items-center gap-2 bg-teal-500 hover:bg-teal-400 text-slate-950 font-semibold px-6 py-3 rounded-lg transition-colors text-sm"
             >
               <Github size={16} />
               GitHub
@@ -47,7 +32,7 @@ export default function Contact({ email, location, links }: Props) {
                 href={links.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-slate-400 hover:text-teal-400 transition-colors text-sm"
+                className="inline-flex items-center gap-2 border border-slate-700 hover:border-teal-500 text-slate-300 hover:text-teal-400 font-medium px-6 py-3 rounded-lg transition-colors text-sm"
               >
                 <Linkedin size={16} />
                 LinkedIn

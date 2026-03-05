@@ -15,7 +15,6 @@ export default function App() {
         <Hero
           name={resume.name}
           title={resume.title}
-          location={resume.location}
           summary={resume.summary}
         />
 
@@ -32,11 +31,7 @@ export default function App() {
         </div>
 
         <div className="border-t border-slate-800/50">
-          <Contact
-            email={resume.links.email}
-            location={resume.location}
-            links={resume.links}
-          />
+          <Contact links={resume.links} />
         </div>
       </main>
 

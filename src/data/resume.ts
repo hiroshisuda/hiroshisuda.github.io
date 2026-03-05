@@ -3,12 +3,9 @@ import type { ResumeData } from '../types/resume';
 const resume: ResumeData = {
   name: 'Hiroshi Suda',
   title: 'Senior Software Engineer',
-  location: 'Pittsburgh, PA',
-  phone: 'REDACTED',
   summary:
     'Detail-oriented software engineer with 8+ years of experience in full-stack development, specializing in visualizations, cloud technologies, and automation. Proven expertise in optimizing development processes, implementing DevOps practices, and leading Agile teams as a Scrum Master. Adept at leveraging modern web technologies, backend frameworks, and cloud solutions to build scalable applications.',
   links: {
-    email: 'hsuda15@gmail.com',
     github: 'https://github.com/hiroshisuda',
     // linkedin: 'https://linkedin.com/in/yourprofile',
   },
