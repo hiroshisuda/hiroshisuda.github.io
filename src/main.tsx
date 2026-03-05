@@ -3,20 +3,12 @@ import { createRoot } from 'react-dom/client';
 import './index.css';
 import App from './App.tsx';
 
-// Default to dark mode; switch to light only if user explicitly prefers light
+// Apply initial theme before first render to avoid flash
+const stored = localStorage.getItem('theme');
 const prefersDark = !window.matchMedia('(prefers-color-scheme: light)').matches;
-if (prefersDark) {
+if (stored === 'dark' || (!stored && prefersDark)) {
   document.documentElement.classList.add('dark');
 }
-
-// Keep in sync if the user changes their system preference
-window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', (e) => {
-  if (e.matches) {
-    document.documentElement.classList.remove('dark');
-  } else {
-    document.documentElement.classList.add('dark');
-  }
-});
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
