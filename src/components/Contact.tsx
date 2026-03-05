@@ -1,4 +1,4 @@
-import { Github, Linkedin } from 'lucide-react';
+import { GitHubIcon, LinkedInIcon } from './BrandIcons';
 import type { Links } from '../types/resume';
 
 interface Props {
@@ -24,7 +24,7 @@ export default function Contact({ links }: Props) {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-400 text-white dark:text-slate-950 font-semibold px-6 py-3 rounded-lg transition-colors text-sm"
             >
-              <Github size={16} />
+              <GitHubIcon size={16} />
               GitHub
             </a>
             {links.linkedin && (
@@ -34,7 +34,7 @@ export default function Contact({ links }: Props) {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 border border-slate-300 dark:border-slate-700 hover:border-amber-500 dark:hover:border-amber-500 text-slate-600 dark:text-slate-300 hover:text-amber-600 dark:hover:text-amber-400 font-medium px-6 py-3 rounded-lg transition-colors text-sm"
               >
-                <Linkedin size={16} />
+                <LinkedInIcon size={16} />
                 LinkedIn
               </a>
             )}

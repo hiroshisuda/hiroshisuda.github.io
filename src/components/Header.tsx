@@ -1,4 +1,5 @@
-import { Github, Linkedin, Sun, Moon } from 'lucide-react';
+import { Sun, Moon } from 'lucide-react';
+import { GitHubIcon, LinkedInIcon } from './BrandIcons';
 import type { Links } from '../types/resume';
 
 interface Props {
@@ -47,7 +48,7 @@ export default function Header({ name, links, theme, onToggleTheme }: Props) {
             aria-label="GitHub"
             className="text-slate-500 dark:text-slate-400 hover:text-amber-500 dark:hover:text-amber-400 transition-colors"
           >
-            <Github size={20} />
+            <GitHubIcon size={20} />
           </a>
           {links.linkedin && (
             <a
@@ -57,7 +58,7 @@ export default function Header({ name, links, theme, onToggleTheme }: Props) {
               aria-label="LinkedIn"
               className="text-slate-500 dark:text-slate-400 hover:text-amber-500 dark:hover:text-amber-400 transition-colors"
             >
-              <Linkedin size={20} />
+              <LinkedInIcon size={20} />
             </a>
           )}
           <button
