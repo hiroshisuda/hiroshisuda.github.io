@@ -34,7 +34,7 @@ export default function Experience({ experience }: Props) {
                   <ul className="space-y-2">
                     {entry.bullets.map((bullet, j) => (
                       <li key={j} className="flex gap-3 text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
-                        <span className="text-teal-500 mt-1.5 shrink-0">▸</span>
+                        <span className="text-teal-500 leading-relaxed shrink-0">▸</span>
                         {bullet}
                       </li>
                     ))}
