@@ -2,7 +2,8 @@ export interface ExperienceEntry {
   company: string;
   title: string;
   period: string;
-  bullets: string[];
+  description?: string;
+  bullets?: string[];
 }
 
 export interface SkillGroup {

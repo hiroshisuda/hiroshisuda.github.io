@@ -31,14 +31,22 @@ export default function Experience({ experience }: Props) {
                     <span className="text-slate-400 dark:text-slate-500 text-sm font-mono shrink-0">{entry.period}</span>
                   </div>
 
-                  <ul className="space-y-2">
-                    {entry.bullets.map((bullet, j) => (
-                      <li key={j} className="flex gap-3 text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
-                        <span className="text-amber-500 leading-relaxed shrink-0">▸</span>
-                        {bullet}
-                      </li>
-                    ))}
-                  </ul>
+                  {entry.description && (
+                    <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-4">
+                      {entry.description}
+                    </p>
+                  )}
+
+                  {entry.bullets && entry.bullets.length > 0 && (
+                    <ul className="space-y-2">
+                      {entry.bullets.map((bullet, j) => (
+                        <li key={j} className="flex gap-3 text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                          <span className="text-amber-500 leading-relaxed shrink-0">▸</span>
+                          {bullet}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </div>
               </div>
             ))}
