@@ -56,7 +56,7 @@ Pushing to `main` triggers the GitHub Actions workflow (`.github/workflows/deplo
 
 The `public/CNAME` file sets the custom domain to `hiroshisuda.com`. DNS is configured at the registrar with `A` records pointing to GitHub Pages IPs:
 
-```
+```text
 185.199.108.153
 185.199.109.153
 185.199.110.153
