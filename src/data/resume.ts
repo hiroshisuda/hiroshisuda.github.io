@@ -18,7 +18,6 @@ const resume: ResumeData = {
       description:
         "I build the web application that remote operators use to monitor and assist autonomous semi trucks in the field — a real-time interface where reliability and UX actually matter. I also run the team as Scrum Master, so I spend as much time thinking about how we work as what we build.",
       bullets: [
-        "Supporting 250+ active users across operations.",
         "Promoted from Full Stack Engineer after leading increasingly complex cross-functional work.",
         "Built team performance dashboards in Datadog to surface bottlenecks and track delivery health.",
       ],
