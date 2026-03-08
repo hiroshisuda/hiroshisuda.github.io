@@ -13,55 +13,66 @@ const resume: ResumeData = {
   experience: [
     {
       company: "Torc Robotics",
-      title: "Senior Software Engineer",
-      period: "July 2024 – Present",
-      description:
-        "I build the web application that remote operators use to monitor and assist autonomous semi trucks in the field — a real-time interface where reliability and UX actually matter. I also run the team as Scrum Master, so I spend as much time thinking about how we work as what we build.",
-      bullets: [
-        "Promoted from Full Stack Engineer after leading increasingly complex cross-functional work.",
-        "Built team performance dashboards in Datadog to surface bottlenecks and track delivery health.",
-      ],
-    },
-    {
-      company: "Torc Robotics",
-      title: "Full Stack Software Engineer",
-      period: "September 2021 – June 2024",
-      description:
-        "This is where I got deep into the AV stack — building data visualizations that let engineers inspect vehicle behavior, plus cloud infrastructure for edge and containerized services. I picked up Scrum Master responsibilities here too, which grew into a bigger part of my role over time.",
-      bullets: [
-        "AV data visualizations used by engineering teams and in external marketing, built with Golang, XViz, and JavaScript.",
-        "Cloud applications on AWS including Greengrass (edge) and ECS (containerized services).",
+      roles: [
+        {
+          title: "Senior Software Engineer",
+          period: "July 2024 – Present",
+          description:
+            "I build the web application that remote support staff use to monitor and assist autonomous semi trucks in the field — a real-time interface where reliability and UX actually matter. Beyond the technical work, I took on team leadership responsibilities — owning our delivery process, running planning and retros, and keeping the team unblocked.",
+          bullets: [
+            "Promoted from Full Stack Engineer after leading increasingly complex cross-functional work.",
+            "Built team performance dashboards in Datadog to surface bottlenecks and track delivery health.",
+          ],
+        },
+        {
+          title: "Full Stack Software Engineer",
+          period: "September 2021 – June 2024",
+          description:
+            "This is where I got deep into the AV stack — building data visualizations that let engineers inspect vehicle behavior, plus cloud infrastructure for edge and containerized services. Over time I took on team leadership responsibilities alongside the technical work, eventually owning our delivery process and team health.",
+          bullets: [
+            "AV data visualizations used by engineering teams and in external marketing, built with Golang, XViz, and JavaScript.",
+            "Built a pipeline for creating, deploying, and managing software on hardware benches used in the commissioning process of autonomous trucks — using AWS ImageBuilder to produce images deployed to remote devices via AWS Greengrass.",
+            "Cloud applications on AWS including Greengrass (edge) and ECS (containerized services).",
+          ],
+        },
       ],
     },
     {
       company: "Savvior Custom Software Solutions",
-      title: "Software Developer",
-      period: "January 2021 – June 2021",
-      description:
-        "Short contract role focused on backend systems that synchronized client data across multiple third-party APIs. A lot of the work was untangling messy integrations — figuring out what was actually happening between systems and making it reliable.",
-      bullets: [
-        "Backend sync systems built with Laravel, Doctrine/DBAL, and SQL.",
-        "Worked directly with clients to diagnose and resolve integration problems.",
+      roles: [
+        {
+          title: "Software Developer",
+          period: "January 2021 – June 2021",
+          description:
+            "Focused on backend systems that synchronized client data across multiple third-party APIs. A lot of the work was untangling messy integrations — figuring out what was actually happening between systems and making it reliable.",
+          bullets: [
+            "Backend sync systems built with Laravel, Doctrine/DBAL, and SQL.",
+            "Worked directly with clients to diagnose and resolve integration problems.",
+          ],
+        },
       ],
     },
     {
       company: "UNCG Online",
-      title: "Full Stack Developer",
-      period: "May 2017 – December 2020",
-      description:
-        "I spent three-plus years as the lead developer on a suite of full-stack apps for online education, building most of it from the ground up — REST APIs, a React frontend, auth, and test coverage. Eventually took on team leadership as we grew.",
-      bullets: [
-        "Implemented OAuth 2.0 with PKCE from scratch — greenfield auth integration.",
-        "Wrote automated test suites that gave the team confidence to ship faster.",
-        "Led a distributed team across remote and on-site work.",
+      roles: [
+        {
+          title: "Full Stack Developer",
+          period: "May 2017 – December 2020",
+          description:
+            "Three-plus years building full-stack applications for online education — REST APIs, a React frontend backed by Laravel and MySQL, and cloud hosting on Azure. I worked across the whole stack, kept test coverage solid, and collaborated closely in a mix of remote and on-site environments.",
+          bullets: [
+            "Built and tested frontend and backend applications using Laravel PHP, React, MySQL, and PHPUnit.",
+            "Developed and maintained REST APIs and managed cloud hosting on Azure.",
+            "Integrated OAuth 2.0 with PKCE for secure authentication — implemented from scratch.",
+          ],
+        },
+        {
+          title: "Web Development Intern",
+          period: "July 2016 – May 2017",
+          description:
+            "Got my start here building WordPress themes for online courses and university marketing pages. Standardized theme development across the department and kept some legacy AngularJS apps alive while newer projects moved forward.",
+        },
       ],
-    },
-    {
-      company: "UNCG Online",
-      title: "Web Development Intern",
-      period: "July 2016 – May 2017",
-      description:
-        "Got my start here building WordPress themes for online courses and university marketing pages. Standardized theme development across the department and kept some legacy AngularJS apps alive while newer projects moved forward.",
     },
   ],
   skills: [
@@ -85,7 +96,7 @@ const resume: ResumeData = {
     {
       category: "Cloud & DevOps",
       skills: [
-        "AWS (ECS, Greengrass, AppSync, DynamoDB)",
+        "AWS (ECS, Greengrass, ImageBuilder, AppSync, DynamoDB)",
         "Azure",
         "Docker",
         "Datadog",
@@ -103,6 +114,16 @@ const resume: ResumeData = {
       degree: "B.S. in Computer Science",
       graduation: "May 2017",
       notes: ["Minor in Mathematics"],
+    },
+  ],
+  publications: [
+    {
+      title:
+        "Technical Note: Proposed Standard for Automatic Calculation of Rainfall Erosivity",
+      authors: "M. R. Reyes, H. Suda, M. Brooks, R. Boyles",
+      journal: "Applied Engineering in Agriculture, Vol. 26, No. 3",
+      year: 2010,
+      url: "https://www.researchgate.net/publication/271433109_Technical_Note_Proposed_Standard_for_Automatic_Calculation_of_Rainfall_Erosivity",
     },
   ],
   additionalSkills: [

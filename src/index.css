@@ -2,22 +2,35 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-/* ─── Accent color ───────────────────────────────────────────────────────────
-   Change the accent palette here to retheme the entire site.
-   Swap amber-* for any Tailwind color (e.g. sky, violet, emerald).
+/* ─── Theme Configuration ────────────────────────────────────────────────────
+   Everything visual is controlled here. To retheme the site:
+
+   ACCENT COLOR  — swap violet-* for any Tailwind palette
+                   (e.g. amber, sky, emerald, rose, orange, cyan)
+
+   FONTS         — --font-sans drives all text
+                   --font-mono drives code / accent labels
+
+   HERO PATTERN  — --hero-dot-color controls the dot grid tint
+                   set to "transparent" to disable the pattern
    ─────────────────────────────────────────────────────────────────────────── */
 @theme {
+  /* Accent palette */
   --color-accent-300: var(--color-amber-300);
   --color-accent-400: var(--color-amber-400);
   --color-accent-500: var(--color-amber-500);
   --color-accent-600: var(--color-amber-600);
   --color-accent-700: var(--color-amber-700);
+
+  /* Fonts */
+  --font-sans: "Space Grotesk", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
 }
 
 @layer base {
   html {
     scroll-behavior: smooth;
-    font-family: "Inter", system-ui, sans-serif;
+    font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -25,4 +38,22 @@
   body {
     margin: 0;
   }
+}
+
+/* ─── Hero dot grid ──────────────────────────────────────────────────────── */
+.hero-dots {
+  background-image: radial-gradient(
+    circle,
+    theme(colors.slate.300) 1px,
+    transparent 1px
+  );
+  background-size: 28px 28px;
+}
+
+.dark .hero-dots {
+  background-image: radial-gradient(
+    circle,
+    theme(colors.slate.700) 1px,
+    transparent 1px
+  );
 }

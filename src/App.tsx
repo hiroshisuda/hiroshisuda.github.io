@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import Experience from './components/Experience';
 import Skills from './components/Skills';
 import Education from './components/Education';
+import Publications from './components/Publications';
 import Contact from './components/Contact';
 
 export default function App() {
@@ -21,26 +22,17 @@ export default function App() {
           location={resume.location}
           summary={resume.summary}
         />
-
-        <div className="border-t border-slate-200 dark:border-slate-800/50">
-          <Experience experience={resume.experience} />
-        </div>
-
-        <div className="border-t border-slate-200 dark:border-slate-800/50">
-          <Skills skills={resume.skills} additionalSkills={resume.additionalSkills} />
-        </div>
-
-        <div className="border-t border-slate-200 dark:border-slate-800/50">
-          <Education education={resume.education} />
-        </div>
-
-        <div className="border-t border-slate-200 dark:border-slate-800/50">
-          <Contact links={resume.links} />
-        </div>
+        <Experience experience={resume.experience} />
+        <Skills skills={resume.skills} additionalSkills={resume.additionalSkills} />
+        <Education education={resume.education} />
+        {resume.publications && resume.publications.length > 0 && (
+          <Publications publications={resume.publications} />
+        )}
+        <Contact links={resume.links} />
       </main>
 
-      <footer className="border-t border-slate-200 dark:border-slate-800 py-6">
-        <div className="max-w-5xl mx-auto px-6 text-center text-slate-400 dark:text-slate-600 text-xs font-mono">
+      <footer className="border-t border-slate-100 dark:border-slate-800/60 py-8">
+        <div className="max-w-5xl mx-auto px-6 text-center text-slate-400 dark:text-slate-600 text-xs font-mono tracking-wider">
           Built with React + TypeScript + Tailwind CSS
         </div>
       </footer>

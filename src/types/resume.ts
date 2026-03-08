@@ -1,9 +1,13 @@
-export interface ExperienceEntry {
-  company: string;
+export interface ExperienceRole {
   title: string;
   period: string;
   description?: string;
   bullets?: string[];
+}
+
+export interface ExperienceEntry {
+  company: string;
+  roles: ExperienceRole[];
 }
 
 export interface SkillGroup {
@@ -17,6 +21,14 @@ export interface EducationEntry {
   degree: string;
   graduation: string;
   notes: string[];
+}
+
+export interface Publication {
+  title: string;
+  authors: string;
+  journal: string;
+  year: number;
+  url: string;
 }
 
 export interface Links {
@@ -34,4 +46,5 @@ export interface ResumeData {
   skills: SkillGroup[];
   education: EducationEntry[];
   additionalSkills: string[];
+  publications?: Publication[];
 }

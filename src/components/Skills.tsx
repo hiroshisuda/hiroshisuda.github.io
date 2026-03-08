@@ -7,24 +7,21 @@ interface Props {
 
 export default function Skills({ skills, additionalSkills }: Props) {
   return (
-    <section id="skills" className="py-20">
+    <section id="skills" className="py-16 border-t border-slate-100 dark:border-slate-800/60">
       <div className="max-w-5xl mx-auto px-6">
-        <SectionHeading>Skills</SectionHeading>
+        <SectionHeading num="03">Skills</SectionHeading>
 
-        <div className="mt-12 grid sm:grid-cols-2 gap-6">
+        <div className="mt-12 space-y-10">
           {skills.map((group) => (
-            <div
-              key={group.category}
-              className="bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-6 hover:border-slate-300 dark:hover:border-slate-700 transition-colors"
-            >
-              <h3 className="text-slate-500 dark:text-slate-300 font-semibold text-sm uppercase tracking-widest mb-4">
+            <div key={group.category}>
+              <h3 className="font-mono text-[11px] font-medium text-slate-400 dark:text-slate-500 uppercase tracking-[0.2em] mb-3">
                 {group.category}
               </h3>
               <div className="flex flex-wrap gap-2">
                 {group.skills.map((skill) => (
                   <span
                     key={skill}
-                    className="bg-white dark:bg-slate-800 text-accent-700 dark:text-accent-300 text-xs font-mono px-3 py-1.5 rounded-md border border-slate-200 dark:border-slate-700"
+                    className="font-mono text-xs px-3 py-1.5 rounded-md bg-slate-100 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700/60 hover:border-accent-400 hover:text-accent-600 dark:hover:text-accent-300 transition-colors cursor-default"
                   >
                     {skill}
                   </span>
@@ -32,32 +29,35 @@ export default function Skills({ skills, additionalSkills }: Props) {
               </div>
             </div>
           ))}
-        </div>
 
-        <div className="mt-8 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-6">
-          <h3 className="text-slate-500 dark:text-slate-300 font-semibold text-sm uppercase tracking-widest mb-4">
-            Methodologies & Practices
-          </h3>
-          <ul className="grid sm:grid-cols-2 gap-2">
-            {additionalSkills.map((skill) => (
-              <li key={skill} className="flex items-center gap-2 text-slate-600 dark:text-slate-400 text-sm">
-                <span className="text-accent-500">▸</span>
-                {skill}
-              </li>
-            ))}
-          </ul>
+          <div className="pt-4 border-t border-slate-100 dark:border-slate-800/60">
+            <h3 className="font-mono text-[11px] font-medium text-slate-400 dark:text-slate-500 uppercase tracking-[0.2em] mb-3">
+              Methodologies & Practices
+            </h3>
+            <div className="flex flex-wrap gap-2">
+              {additionalSkills.map((skill) => (
+                <span
+                  key={skill}
+                  className="text-xs px-3 py-1.5 rounded-md font-medium text-accent-600 dark:text-accent-400 bg-accent-500/8 dark:bg-accent-500/10 border border-accent-200 dark:border-accent-500/20 cursor-default"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>
   );
 }
 
-function SectionHeading({ children }: { children: React.ReactNode }) {
+function SectionHeading({ children, num }: { children: React.ReactNode; num: string }) {
   return (
-    <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 flex items-center gap-4">
-      <span className="text-accent-500 dark:text-accent-400 font-mono text-xl">03.</span>
-      {children}
-      <div className="flex-1 h-px bg-slate-200 dark:bg-slate-800 hidden sm:block" />
-    </h2>
+    <div className="flex items-center gap-5">
+      <span className="font-mono text-accent-500 dark:text-accent-400 text-sm font-medium">{num}</span>
+      <h2 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-slate-100 leading-none tracking-tight">
+        {children}
+      </h2>
+    </div>
   );
 }
