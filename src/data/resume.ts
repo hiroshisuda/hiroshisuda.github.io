@@ -18,17 +18,17 @@ const resume: ResumeData = {
           title: "Senior Software Engineer",
           period: "July 2024 – Present",
           description:
-            "I build the web application that remote support staff use to monitor and assist autonomous semi trucks in the field — a real-time interface where reliability and UX actually matter. Beyond the technical work, I took on team leadership responsibilities — owning our delivery process, running planning and retros, and keeping the team unblocked.",
+            "I lead development of the web application remote support staff use to monitor and assist autonomous semi trucks in the field — a high-stakes real-time interface where reliability and clear UX are critical. I also drive team delivery end-to-end: owning planning, running retros, managing cross-functional dependencies, and keeping the team unblocked.",
           bullets: [
             "Promoted from Full Stack Engineer after leading increasingly complex cross-functional work.",
-            "Built team performance dashboards in Datadog to surface bottlenecks and track delivery health.",
+            "Built team performance dashboards in Datadog to surface bottlenecks and track delivery.",
           ],
         },
         {
           title: "Full Stack Software Engineer",
           period: "September 2021 – June 2024",
           description:
-            "This is where I got deep into the AV stack — building data visualizations that let engineers inspect vehicle behavior, plus cloud infrastructure for edge and containerized services. Over time I took on team leadership responsibilities alongside the technical work, eventually owning our delivery process and team health.",
+            "Built data visualizations that let engineers inspect vehicle behavior, plus cloud infrastructure for edge and containerized services. Over time I took on team leadership responsibilities alongside the technical work, eventually owning our delivery process.",
           bullets: [
             "AV data visualizations used by engineering teams and in external marketing, built with Golang, XViz, and JavaScript.",
             "Built a pipeline for creating, deploying, and managing software on hardware benches used in the commissioning process of autonomous trucks — using AWS ImageBuilder to produce images deployed to remote devices via AWS Greengrass.",
@@ -44,7 +44,7 @@ const resume: ResumeData = {
           title: "Software Developer",
           period: "January 2021 – June 2021",
           description:
-            "Focused on backend systems that synchronized client data across multiple third-party APIs. A lot of the work was untangling messy integrations — figuring out what was actually happening between systems and making it reliable.",
+            "Focused on backend systems that synchronized client data across multiple third-party APIs. Stabilized complex multi-API integrations — figured out what was actually happening between systems and made it reliable.",
           bullets: [
             "Backend sync systems built with Laravel, Doctrine/DBAL, and SQL.",
             "Worked directly with clients to diagnose and resolve integration problems.",
@@ -59,7 +59,7 @@ const resume: ResumeData = {
           title: "Full Stack Developer",
           period: "May 2017 – December 2020",
           description:
-            "Three-plus years building full-stack applications for online education — REST APIs, a React frontend backed by Laravel and MySQL, and cloud hosting on Azure. I worked across the whole stack, kept test coverage solid, and collaborated closely in a mix of remote and on-site environments.",
+            "Three-plus years building full-stack applications for online education — REST APIs, a React frontend backed by Laravel and MySQL, and cloud hosting on Azure. I worked across the whole stack and kept test coverage solid.",
           bullets: [
             "Built and tested frontend and backend applications using Laravel PHP, React, MySQL, and PHPUnit.",
             "Developed and maintained REST APIs and managed cloud hosting on Azure.",
@@ -70,7 +70,7 @@ const resume: ResumeData = {
           title: "Web Development Intern",
           period: "July 2016 – May 2017",
           description:
-            "Got my start here building WordPress themes for online courses and university marketing pages. Standardized theme development across the department and kept some legacy AngularJS apps alive while newer projects moved forward.",
+            "Got my start here building WordPress themes for online courses and university marketing pages. Standardized theme development across the department and maintained legacy AngularJS apps while newer projects moved forward.",
         },
       ],
     },
