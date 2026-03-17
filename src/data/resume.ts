@@ -38,21 +38,6 @@ const resume: ResumeData = {
       ],
     },
     {
-      company: "Savvior Custom Software Solutions",
-      roles: [
-        {
-          title: "Software Developer",
-          period: "January 2021 – June 2021",
-          description:
-            "Focused on backend systems that synchronized client data across multiple third-party APIs. Stabilized complex multi-API integrations — figured out what was actually happening between systems and made it reliable.",
-          bullets: [
-            "Backend sync systems built with Laravel, Doctrine/DBAL, and SQL.",
-            "Worked directly with clients to diagnose and resolve integration problems.",
-          ],
-        },
-      ],
-    },
-    {
       company: "UNCG Online",
       roles: [
         {
